@@ -21,7 +21,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({482685493914632193: true});
 
-const prefix = "f";
+const prefix = "u";
 /////////////////////////
 ////////////////////////
 
@@ -318,15 +318,15 @@ client.on('message', message => {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
         .setDescription('**برفكس البوت (!)**')
-        .addField('fplay', 'لتشغيل اغنية')
-        .addField('fjoin', 'دخول رومك الصوتي')
-        .addField('fdisconnect', 'الخروج من رومك الصوتي')
-        .addField('fskip', 'تخطي الأغنية')
-        .addField('fpause', 'ايقاف الاغنية مؤقتا')
-        .addField('fresume', 'تكملة الاغنية')
-        .addField('fqueue', 'اظهار قائمة التشغيل')
-        .addField('fnp', 'اظهار الاغنية اللي انت مشغلها حاليا')
-        .setFooter('تم برمجة البوت من قبل Hady Khaled#6687')
+        .addField('uplay', 'لتشغيل اغنية')
+        .addField('ujoin', 'دخول رومك الصوتي')
+        .addField('udisconnect', 'الخروج من رومك الصوتي')
+        .addField('uskip', 'تخطي الأغنية')
+        .addField('upause', 'ايقاف الاغنية مؤقتا')
+        .addField('uresume', 'تكملة الاغنية')
+        .addField('uqueue', 'اظهار قائمة التشغيل')
+        .addField('unp', 'اظهار الاغنية اللي انت مشغلها حاليا')
+        .setFooter('blueberry')
       message.channel.send(helpEmbed);
     }
 });
@@ -342,7 +342,7 @@ client.on('message', message => {
       message.channel.send(helpEmbed);
     }
 });
-const developers = ["310864638604738562"]
+const developers = ["451816958988648449"]
 const adminprefix = "1";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
